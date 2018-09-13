@@ -53,11 +53,12 @@ class WebFlowAuth(object):
         temp = [i.replace('www.', '') for i in r]
         return temp
 
-    @property
-    def get_webflow_css_file(self):
-        return requests.get(self.css_webflow).content
-
-    @property
     def project_content(self, key):
         url = '%s/%s' %(self.s3_url, key)
         return requests.get(url).json()
+
+    @property
+    def get_webflow_css_file(self):
+        return requests.get(self.css_webflow).text
+
+
