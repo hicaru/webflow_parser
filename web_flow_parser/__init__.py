@@ -1,3 +1,3 @@
-from .web_flow import WebFlowAuth
+from . import main
 
-__all__ = ['web_flow', 'template_parse']
+__all__ = ['web_flow', 'template_parse', 'main']

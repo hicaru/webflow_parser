@@ -1,3 +1,4 @@
+from bs4 import BeautifulSoup
 
 
 class Parser(object):
@@ -47,4 +48,6 @@ class Parser(object):
         dir = '%s/assets/%s.html' % (self.root_dir, page['page']['title'])
 
         with open(dir, 'w') as css_file:
-            css_file.write(page['html'])
+            soup = BeautifulSoup(page['html'], 'html.parser')
+            beautiful_html = soup.prettify()
+            css_file.write(beautiful_html)
