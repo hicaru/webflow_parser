@@ -7,3 +7,5 @@
   * python3.* start.py
 
 ### authentication is required.
+
+assets file in ./web_flow_parser/assets
