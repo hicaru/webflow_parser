@@ -1,1 +1,9 @@
-# webflow_parser
+# webflow_parser, to get a template for free.
+
+
+## run.
+  * pip3 install requirements.txt
+  * python3 start.py
+  * python3.* start.py
+
+### authentication is required.
